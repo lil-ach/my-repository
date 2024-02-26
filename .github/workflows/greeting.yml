@@ -1,4 +1,7 @@
 name: Greet user
 on: workflow_dispatch
 jobs:
-    - echo "Greeting ${{ github.actor }}✋🏽"
+    greet-user:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Greeting ${{ github.actor }}✋🏽"
