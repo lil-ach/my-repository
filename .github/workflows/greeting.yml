@@ -1,4 +1,4 @@
 name: Greet user
 on: workflow_dispatch
-job:
+jobs:
     - echo "Greeting ${{ github.actor }}✋🏽"
